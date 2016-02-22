@@ -1,4 +1,5 @@
 require 'httparty'
+require './endpoints.rb'
 
 puts "Enter a zipcode:"
 zip = gets.chomp
