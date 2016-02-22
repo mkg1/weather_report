@@ -1,0 +1,3 @@
+class Hurricanes
+
+end

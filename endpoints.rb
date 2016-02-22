@@ -1,0 +1,5 @@
+require './conditions.rb'
+require './10_day_forecast.rb'
+require './astronomy.rb'
+require './alerts.rb'
+require './hurricanes.rb'
