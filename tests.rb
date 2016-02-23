@@ -10,11 +10,11 @@ class Condition
   end
 end
 
-# class Forecast10Day
-#   def initialize(location)
-#     @response = JSON.parse(File.read("conditions2.json"))
-#   end
-# end
+class Forecast10Day
+  def initialize(location)
+    @response = JSON.parse(File.read("10_day_forecast.json"))
+  end
+end
 
 class Astronomy
   def initialize(location)
@@ -41,7 +41,7 @@ class WeatherTest < Minitest::Test
   end
 
   def test_conditions
-    c = Condition.new(94101)
+    c = Condition.new(28779)
     assert_equal "54.3 F (12.4 C)", c.temperature[0]
     assert_equal "54.3 F (12.4 C)", c.temperature[1]
     assert_equal "Sylva, NC", c.location
@@ -50,12 +50,14 @@ class WeatherTest < Minitest::Test
     assert_equal "Calm", c.wind
   end
 
-  # def test_10_day_forecast
-  #
-  # end
+  def test_10_day_forecast
+    f = Forecast10Day.new(28779)
+    assert_equal "Monday: Cloudy with rain. Lows overnight in the upper 40s.", f.daily_overview[0]
+    assert_equal "Wednesday Night: Cloudy with rain and snow showers in the evening. Snow showers overnight. Low 33F. Winds W at 10 to 20 mph. Chance of precip 60%. Snow accumulations less than one inch.", f.daily_overview[5]
+  end
 
   def test_sunrise_time
-    a = Astronomy.new(94101)
+    a = Astronomy.new(28779)
     assert_equal "7:11", a.sunrise
     assert_equal "18:21", a.sunset
   end
