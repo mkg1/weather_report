@@ -1,4 +1,3 @@
-require 'json'
 
 class Hurricane
   def initialize(location)
@@ -7,12 +6,10 @@ class Hurricane
 
   def current_hurricane_list
     storms = @response["currenthurricane"]
+    hurricane_array = []
     storms.each do |s|
-        name = s["stormInfo"]["stormName_Nice"]
-        windspeed = s["Current"]["WindSpeed"]["Mph"]
-        direction_angle = s["Current"]["Movement"]["Degrees"]
-        direction = s["Current"]["Movement"]["Text"]
-        puts "Currently, #{name} is moving at #{windspeed} miles per hour and heading #{direction_angle} #{direction}."
-      end
+      hurricane_array << "#{s["stormInfo"]["stormName_Nice"]} is moving at #{s["Current"]["WindSpeed"]["Mph"]} miles per hour and heading #{s["Current"]["Movement"]["Degrees"]} #{s["Current"]["Movement"]["Text"]}."
+    end
+    hurricane_array
   end
 end
