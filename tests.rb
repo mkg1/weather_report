@@ -22,8 +22,11 @@ class Astronomy
   end
 end
 
-# class Alerts
-# end
+class Alert
+  def initialize(location)
+    @response = JSON.parse(File.read("alerts.json"))
+  end
+end
 
 class Hurricane
   def initialize(location)
@@ -36,7 +39,7 @@ class WeatherTest < Minitest::Test
     assert Condition
     assert Forecast10Day
     assert Astronomy
-    assert Alerts
+    assert Alert
     assert Hurricane
   end
 
@@ -62,8 +65,11 @@ class WeatherTest < Minitest::Test
     assert_equal "18:21", a.sunset
   end
 
-  # def test_alerts
-  # end
+  def test_alerts
+    alert = Alert.new(28779)
+    assert_equal "High Wind Watch", alert.description[0]
+    assert_equal "1:00 PM EST on February 24, 2016", alert.expiration[0]
+  end
 
   def test_hurricanes
     h = Hurricane.new(28779)
