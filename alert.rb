@@ -1,4 +1,4 @@
-class Forecast10Day
+class Alerts
   def initialize
   end
 end
