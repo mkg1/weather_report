@@ -6,4 +6,6 @@ Ruby application that pulls data from multiple Weather Underground API endpoints
 
 ### Time Estimates
 
-I estimate the normal mode to take approximately 6-7 hours.
+I estimate the normal mode will take approximately 6-7 hours.
+
+*Actual time: About 7.5 hours
