@@ -1,0 +1,94 @@
+
+{
+  "response": {
+  "version":"0.1",
+  "termsofService":"http://www.wunderground.com/weather/api/d/terms.html",
+  "features": {
+  "conditions": 1
+  }
+	}
+  ,	"current_observation": {
+		"image": {
+		"url":"http://icons.wxug.com/graphics/wu2/logo_130x80.png",
+		"title":"Weather Underground",
+		"link":"http://www.wunderground.com"
+		},
+		"display_location": {
+		"full":"Sylva, NC",
+		"city":"Sylva",
+		"state":"NC",
+		"state_name":"North Carolina",
+		"country":"US",
+		"country_iso3166":"US",
+		"zip":"28779",
+		"magic":"1",
+		"wmo":"99999",
+		"latitude":"35.37791443",
+		"longitude":"-83.21156311",
+		"elevation":"643.00000000"
+		},
+		"observation_location": {
+		"full":"Court House Hill, Sylva, North Carolina",
+		"city":"Court House Hill, Sylva",
+		"state":"North Carolina",
+		"country":"US",
+		"country_iso3166":"US",
+		"latitude":"35.371407",
+		"longitude":"-83.228561",
+		"elevation":"2172 ft"
+		},
+		"estimated": {
+		},
+		"station_id":"KNCSYLVA6",
+		"observation_time":"Last Updated on February 22, 7:04 PM EST",
+		"observation_time_rfc822":"Mon, 22 Feb 2016 19:04:03 -0500",
+		"observation_epoch":"1456185843",
+		"local_time_rfc822":"Mon, 22 Feb 2016 19:04:52 -0500",
+		"local_epoch":"1456185892",
+		"local_tz_short":"EST",
+		"local_tz_long":"America/New_York",
+		"local_tz_offset":"-0500",
+		"weather":"Rain",
+		"temperature_string":"54.3 F (12.4 C)",
+		"temp_f":54.3,
+		"temp_c":12.4,
+		"relative_humidity":"97%",
+		"wind_string":"Calm",
+		"wind_dir":"SE",
+		"wind_degrees":140,
+		"wind_mph":0.0,
+		"wind_gust_mph":0,
+		"wind_kph":0,
+		"wind_gust_kph":0,
+		"pressure_mb":"1014",
+		"pressure_in":"29.95",
+		"pressure_trend":"0",
+		"dewpoint_string":"54 F (12 C)",
+		"dewpoint_f":54,
+		"dewpoint_c":12,
+		"heat_index_string":"NA",
+		"heat_index_f":"NA",
+		"heat_index_c":"NA",
+		"windchill_string":"NA",
+		"windchill_f":"NA",
+		"windchill_c":"NA",
+		"feelslike_string":"54.3 F (12.4 C)",
+		"feelslike_f":"54.3",
+		"feelslike_c":"12.4",
+		"visibility_mi":"10.0",
+		"visibility_km":"16.1",
+		"solarradiation":"0",
+		"UV":"0.0","precip_1hr_string":"0.00 in ( 0 mm)",
+		"precip_1hr_in":"0.00",
+		"precip_1hr_metric":" 0",
+		"precip_today_string":"0.65 in (17 mm)",
+		"precip_today_in":"0.65",
+		"precip_today_metric":"17",
+		"icon":"rain",
+		"icon_url":"http://icons.wxug.com/i/c/k/nt_rain.gif",
+		"forecast_url":"http://www.wunderground.com/US/NC/Sylva.html",
+		"history_url":"http://www.wunderground.com/weatherstation/WXDailyHistory.asp?ID=KNCSYLVA6",
+		"ob_url":"http://www.wunderground.com/cgi-bin/findweather/getForecast?query=35.371407,-83.228561",
+		"nowcast":""
+	}
+}

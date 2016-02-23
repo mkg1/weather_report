@@ -1,0 +1,65 @@
+
+
+{
+  "response": {
+  "version":"0.1",
+  "termsofService":"http://www.wunderground.com/weather/api/d/terms.html",
+  "features": {
+  "alerts": 1
+  }
+	}
+		,"query_zone": "059",
+	"alerts": [
+		{
+		"type": "WND",
+		"description": "High Wind Watch",
+		"date": "3:34 PM EST on February 22, 2016",
+		"date_epoch": "1456173240",
+		"expires": "1:00 PM EST on February 24, 2016",
+		"expires_epoch": "1456336800",
+		"tz_short":"EST",
+		"tz_long":"America/New_York",
+		"message": "\u000A...High wind watch in effect from Tuesday evening through\u000AWednesday afternoon above 3500 feet...\u000A\u000AThe National Weather Service in Greenville-Spartanburg has issued\u000Aa high wind watch above 3500 feet...which is in effect from\u000ATuesday evening through Wednesday afternoon.\u000A\u000A* Locations...elevations above 3500 feet in the southern North\u000A Carolina mountains.\u000A\u000A* Hazards...damaging wind gusts.\u000A\u000A* Timing...south to southeast winds will increase rapidly Tuesday\u000A evening...possibly becoming damaging Tuesday night into\u000A Wednesday morning. The winds will shift southwest then westerly\u000A through the day on Wednesday and gradually subside.\u000A\u000A* Winds...south to southeast at 25 to 35 mph with gusts of 50 to\u000A 60 mph possible at times.\u000A\u000A* Impacts...strong to damaging winds may blow down trees and power\u000A lines. Travel will become hazardous on higher mountain roadways\u000A and in locations where winds are channeled between passes.\u000A\u000APrecautionary/preparedness actions...\u000A\u000AA high wind watch means there is the potential for a hazardous\u000Ahigh wind event. Sustained winds of at least 40 mph...or gusts of\u000A58 mph or stronger may occur. Continue to monitor the latest\u000Aforecasts.\u000A\u000A\u000A\u000AGerapetritis\u000A\u000A\u000A",
+		"phenomena": "HW",
+		"significance": "A",
+		"ZONES": [
+		{
+		"state":"NC",
+		"ZONE":"051"
+		}
+		,
+		{
+		"state":"NC",
+		"ZONE":"052"
+		}
+		,
+		{
+		"state":"NC",
+		"ZONE":"058"
+		}
+		,
+		{
+		"state":"NC",
+		"ZONE":"059"
+		}
+		,
+		{
+		"state":"NC",
+		"ZONE":"062"
+		}
+		,
+		{
+		"state":"NC",
+		"ZONE":"063"
+		}
+		,
+		{
+		"state":"NC",
+		"ZONE":"064"
+		}
+		],
+		"StormBased": {
+		}
+		}
+	]
+}
