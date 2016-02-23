@@ -1,6 +1,6 @@
 class Astronomy
   def initialize(location)
-    @response = HTTParty.get("http://api.wunderground.com/api/#{ENV["WUNDERGROUND_KEY"]}/astronomy/q/#{zip}.json")
+    @response = HTTParty.get("http://api.wunderground.com/api/#{ENV["WUNDERGROUND_KEY"]}/astronomy/q/#{location}.json")
   end
 
   def sunrise

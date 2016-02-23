@@ -1,7 +1,6 @@
-
 class Hurricane
   def initialize(location)
-    @response = JSON.parse(File.read("hurricanes.json"))
+    @response = HTTParty.get("http://api.wunderground.com/api/#{ENV["WUNDERGROUND_KEY"]}/currenthurricane/q/#{location}.json")
   end
 
   def current_hurricane_list

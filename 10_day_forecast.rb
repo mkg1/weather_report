@@ -1,8 +1,6 @@
-require 'json'
 class Forecast10Day
   def initialize(location)
-    @response = JSON.parse(File.read('10_day_forecast.json'))
-    # @response = HTTParty.get("http://api.wunderground.com/api/#{ENV["WUNDERGROUND_KEY"]}/forecast10day/q/#{zip}.json")
+    @response = HTTParty.get("http://api.wunderground.com/api/#{ENV["WUNDERGROUND_KEY"]}/forecast10day/q/#{location}.json")
   end
 
   def daily_overview
@@ -14,6 +12,3 @@ class Forecast10Day
     daily
   end
 end
-
-# d = Forecast10Day.new(28779)
-# puts d.daily_overview[5]

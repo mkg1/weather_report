@@ -1,5 +1,5 @@
-require './conditions.rb'
+require './condition.rb'
 require './10_day_forecast.rb'
 require './astronomy.rb'
-require './alerts.rb'
-require './hurricanes.rb'
+require './alert.rb'
+require './hurricane.rb'
